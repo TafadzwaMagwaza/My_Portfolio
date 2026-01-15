@@ -6,6 +6,11 @@
 <title>Magwaza | Software Engineer</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
 
 <style>
 :root {
@@ -682,6 +687,57 @@ footer {
 #experience .card {
   text-align: center;
 }
+.socials {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.social-title {
+  color: #c9a24b;
+  letter-spacing: 0.25em;
+  font-size: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.social-card {
+  border: 1px solid rgba(201, 162, 75, 0.35);
+  border-radius: 18px;
+  padding: 1.5rem 1rem;
+  text-decoration: none;
+  color: #c9a24b;
+  background: radial-gradient(circle at top, #111, #000);
+  transition: all 0.3s ease;
+}
+
+.social-card i {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.social-card span {
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+}
+
+.social-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(201, 162, 75, 0.35);
+  border-color: #c9a24b;
+}
+@media (max-width: 480px) {
+  .social-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 
 
@@ -820,38 +876,40 @@ real-time supervision
   </div>
 </section>
 
-<section class="social-section">
-  <span class="social-tag">FIND ME ONLINE</span>
+<section class="socials">
+  <p class="social-title">FIND ME ONLINE</p>
 
   <div class="social-grid">
+    
     <a href="https://github.com/TafadzwaMagwaza/" class="social-card" target="_blank">
-      <span class="social-icon">🐙</span>
-      <span class="social-label">GitHub</span>
+      <i class="fab fa-github"></i>
+      <span>GitHub</span>
     </a>
 
     <a href="https://linkedin.com/in/magwaza" class="social-card" target="_blank">
-      <span class="social-icon">in</span>
-      <span class="social-label">LinkedIn</span>
+      <i class="fab fa-linkedin-in"></i>
+      <span>LinkedIn</span>
     </a>
 
-    <a href="https://twitter.com/Dvcreative_tech" class="social-card" target="_blank">
-      <span class="social-icon">X</span>
-      <span class="social-label">X (Twitter)</span>
+    <a href="https://x.com/Dvcreative_tech" class="social-card" target="_blank">
+      <i class="fab fa-x-twitter"></i>
+      <span>X</span>
     </a>
 
-    <a href="https://facebook.com/" class="social-card" target="_blank">
-      <span class="social-icon">f</span>
-      <span class="social-label">Facebook</span>
+    <a href="https://facebook.com/TafadzwaMagwaza" class="social-card" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+      <span>Facebook</span>
     </a>
 
     <a href="https://instagram.com/turf_tafadzwa" class="social-card" target="_blank">
-      <span class="social-icon">📸</span>
-      <span class="social-label">Instagram</span>
+      <i class="fab fa-instagram"></i>
+      <span>Instagram</span>
     </a>
 
-    </a>
   </div>
 </section>
+
+
 
 
 <footer>
