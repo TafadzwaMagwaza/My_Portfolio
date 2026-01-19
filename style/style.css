@@ -1,4 +1,4 @@
-<style>
+
 :root {
   --gold: #f5c36a;
   --gold-dark: #d4a84f;
@@ -723,7 +723,3 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-
-
-</style>
