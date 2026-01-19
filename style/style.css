@@ -770,4 +770,18 @@ footer {
   transform: translateY(-6px);
   box-shadow: 0 10px 30px rgba(245, 195, 106, 0.15);
 }
+.section-divider {
+  width: 120px;
+  height: 2px;
+  margin: 4rem auto 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--gold),
+    transparent
+  );
+  opacity: 0.8;
+}
+
+
 
