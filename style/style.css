@@ -782,6 +782,19 @@ footer {
   );
   opacity: 0.8;
 }
+/* ========== SCROLL REVEAL SLIDE-UP ========== */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.7s ease-out;
+}
+
+.reveal-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 
 
