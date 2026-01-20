@@ -218,8 +218,13 @@ real-time supervision
   © 2026 Magwaza. All rights reserved.
 </footer>
 <script>
+// Combine glide-items and reveal-up
 const glideItems = document.querySelectorAll('.glide-item, .pill-glide');
+const revealElements = document.querySelectorAll(
+  '.reveal-up, .card, .skill-card, .project-box, .contact-wrap'
+);
 
+// Glide effect for hero
 const glideObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -229,7 +234,21 @@ const glideObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 
 glideItems.forEach(item => glideObserver.observe(item));
+
+// Scroll reveal for other sections
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in-view');
+    } else {
+      entry.target.classList.remove('in-view');
+    }
+  });
+}, { threshold: 0.2 });
+
+revealElements.forEach(el => revealObserver.observe(el));
 </script>
+
 
 
 </body>
